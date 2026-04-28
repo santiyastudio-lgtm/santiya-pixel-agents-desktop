@@ -1,0 +1,6 @@
+{
+  "name": "pixel-agents-desktop",
+  "productName": "Pixel Agents Desktop",
+  "version": "0.1.2",
+  "main": "main.cjs"
+}

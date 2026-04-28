@@ -1,0 +1,14 @@
+# Local logs
+*.log
+
+# Windows noise
+Thumbs.db
+Desktop.ini
+
+# Temporary review and smoke artifacts
+_install_smoke_*
+_review_install_*
+_tmp_*
+
+# Release asset should live in GitHub Releases, not in git history
+*.exe
