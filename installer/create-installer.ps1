@@ -1,22 +1,10 @@
 param(
-  [string]$PackageRoot = "",
-  [string]$OutputDir = ""
+  [string]$PackageRoot = "D:\Pixel Agents Desktop Fresh 4",
+  [string]$OutputDir = "D:\Pixel Agents Desktop Fresh 4\_installer_output"
 )
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
-
-$repoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
-if ([string]::IsNullOrWhiteSpace($OutputDir)) {
-  $OutputDir = Join-Path $repoRoot "_installer_output"
-}
-if ([string]::IsNullOrWhiteSpace($PackageRoot)) {
-  $PackageRoot = Join-Path $repoRoot "_package_root"
-}
-
-if (-not (Test-Path -LiteralPath $PackageRoot)) {
-  throw "PackageRoot was not found. Pass -PackageRoot to the unpacked desktop build folder that contains 'Pixel Agents Desktop.exe' and 'resources\app\package.json'."
-}
 
 function Ensure-Directory {
   param([string]$Path)

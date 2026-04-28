@@ -19,17 +19,6 @@ The app presents active threads as office workers inside a live office scene, su
 - `installer/` — Inno Setup installer scripts
 - `screenshots/` — release screenshots for the GitHub page
 
-## Installer Build Notes
-
-The installer scripts do not assume a machine-specific path.
-
-Pass `-PackageRoot` to a prepared unpacked desktop build folder that contains:
-
-- `Pixel Agents Desktop.exe`
-- `resources/app/package.json`
-
-Installer output defaults to the repository-local `_installer_output` folder.
-
 ## Screenshots
 
 ### Main Office
